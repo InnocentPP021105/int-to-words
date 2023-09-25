@@ -26,7 +26,9 @@ class Square extends React.Component {
                 console.log(result)
             })
             .catch(error => {
-                console.error('AxiosError: ', error);
+                console.error('ValueError: ', error);
+                const result = { words: 'Invalid Input' };
+                this.setState({ result });
             });
     }
 
