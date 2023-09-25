@@ -40,6 +40,7 @@ class Square extends React.Component {
                     onChange={this.handleChange}
                 />
                 <button onClick={this.handleClick}>Submit</button>
+                <button onClick={() => this.setState({ myInput: '', result: ''})}>Clear</button>
                 <div>Result: <b>{this.state.result.words}</b></div>
             </div>
         )
